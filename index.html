@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The avengers</title>
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Los Vengadores</title>
+<link href="https://fonts.googleapis.com/css2?family=Marvel:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+    .fondo{
+    background-image: url('img/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+
+        .banner {
+            width: 100%;
+            height: 300px;
+            background-image: url('img/Bannav.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+   
+        .navbar {
+            background-color: #182353;
+        }
+
+
+        .navbar .nav-link, .navbar .navbar-brand {
+            color: white !important;
+        }
+        .navbar .nav-link:hover {
+            color: #557ae0 !important;
+        }
+       
+     
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+
+        .bienvenida {
+    font-family: 'Marvel', sans-serif; /* Aplicar la fuente Marvel */
+    text-align: center;
+    color: white;
+    font-size: 40px; /* Texto más grande */
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Para centrar la bienvenida verticalmente */
+.inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+  section {
+    display: none; /* Oculta todas las secciones */
+  }
+
+
+  #inicio {
+    display: block; /* Muestra solo la sección de inicio */
+  }
+
+
+
+
+        .hojah {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+
+
+    .card {
+        background: linear-gradient(45deg, #002b5b, #004080, #0066cc, #004080, #002b5b); /* Azul metálico */
+    background-size: 200% 200%;
+    color: white; /* Color del texto */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 162, 255, 0.2), 0 0 20px rgba(0, 162, 255, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.5) 50%,
+        rgba(255, 255, 255, 0) 70%
+    );
+    transform: rotate(30deg);
+    animation: brillo 3s infinite ease-in-out;
+}
+
+
+@keyframes brillo {
+    0% { transform: translateX(-100%) rotate(30deg); }
+    100% { transform: translateX(100%) rotate(30deg); }
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 162, 255, 0.5), 0 0 30px rgba(0, 162, 255, 0.7);
+}
+#heroes h2 {
+    color: white;
+    font-family: 'Arial', cursive, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+.carousel {
+    max-width: 800px;
+    max-height: 400px;
+    margin: auto;
+}
+
+
+.carousel img {
+    max-height: 400px;
+    object-fit: cover;
+}
+.carousel-caption {
+    font-family: 'Comic Sans', cursive, sans-serif;
+    color: white !important;
+    font-size: 24px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.carousel-caption h5 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <body>
+        <div class="banner"></div>
+        <body class="fondo">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#inicio">Bienvenida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#heroes">Héroes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#historia">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#personaje-fav">Personaje Fav</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section id="inicio">
+            <div class="bienvenida">
+                <h1>Bienvenidos a esta página dedicada a los Vengadores.</h1>
+                <p>"Únete a la batalla"</p>
+            </div>
+        </section>
+        <section id="heroes">
+            <h2>NUESTROS HÉROES</h2>
+            <div class="d-flex flex-wrap gap-3">
+            <div class="card" style="width: 18rem;">
+                <img src="img/iron.webp" class="card-img-top" alt="Iron Man (Tony Stark)"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Iron Man (Tony Stark)</h5>
+                    <p class="card-text">Iron Man es un genio, millonario, playboy y filántropo.Usa una armadura avanzada que le otorga superfuerza, vuelo y armamento de alta tecnología.</p>
+                </div>
+            </div>
+           
+            <div class="card" style="width: 18rem;">
+                <img src="img/capi.webp" class="card-img-top" alt="Capitan (Steve Rogers)"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Capitán América (Steve Rogers)</h5>
+                    <p class="card-text">Un supersoldado de la Segunda Guerra Mundial con fuerza, resistencia y habilidades de combate excepcionales. Porta un escudo de vibranium indestructible.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/th2.webp" class="card-img-top" alt="Thor"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Thor</h5>
+                    <p class="card-text"> Dios del Trueno y príncipe de Asgard. Posee una fuerza sobrehumana y controla el clima con su martillo Mjolnir.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/hk2.png" class="card-img-top" alt="Hulk (Bruce Banner)"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title"> Hulk (Bruce Banner)</h5>
+                    <p class="card-text"> Un científico que, al enojarse, se transforma en un monstruo verde con fuerza y resistencia casi ilimitadas.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/spi.jpeg" class="card-img-top" alt="Spiderman"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title"> Spider Man (Peter Parker)</h5>
+                    <p class="card-text"> Un joven con habilidades arácnidas como fuerza mejorada, reflejos y la capacidad de trepar paredes.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/bpn.jpg" class="card-img-top" alt="Pantera Negra"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title"> Pantera Negra (T Challa)</h5>
+                    <p class="card-text"> Rey de Wakanda y guerrero con fuerza, velocidad y sentidos mejorados gracias a la hierba en forma de corazón.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/drs.webp" class="card-img-top" alt="Dr Strange"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title"> Dr Strange (Stephen Strange)</h5>
+                    <p class="card-text">  Un hechicero maestro de las artes místicas. Protege la realidad con magia y el Ojo de Agamotto.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/wn.webp" class="card-img-top" alt="Bruja Escarlata"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title"> Bruja Ecarlata (Wanda Maximoff)</h5>
+                    <p class="card-text">   Poderosa mutante con habilidades de manipulación de la realidad, telequinesis y magia del caos.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/ojoh.jpg" class="card-img-top" alt="Ojo de halcón"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title"> Ojo de halcón (Clint Barton)</h5>Maestro arquero con puntería perfecta. Experto en combate y tácticas estratégicas.Poderosa mutante con habilidades de manipulación de la realidad, telequinesis y magia del caos.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/vdn.jpg" class="card-img-top" alt="Viuda Negra"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Viuda Negra (Natasha Romanoff)</h5>
+                    <p class="card-text">Espía y experta en combate cuerpo a cuerpo. Posee habilidades de sigilo y armas de espionaje</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="img/rc2.jpg" class="card-img-top" alt="Rocket"
+                    style="width: 100%; height: 250px; object-fit: cover;">
+                <div class="card-body">
+                    <h5 class="card-title">Rocket</h5>
+                    <p class="card-text">Rocket es un mapache modificado genéticamente con una mente brillante para la ingeniería y el combate. Es experto en armas, estrategia y tecnología avanzada, lo que lo convierte en un aliado letal en cualquier batalla.</p>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+    
+        
+</body>
+</html>
